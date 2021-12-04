@@ -26,6 +26,17 @@ export default {
     return{
       choice:['景點','美食','住宿','交通']
     }
-  }
+  },
+  created() {
+    this.getData();
+  },
+  methods: {
+    getData() {
+      this.$api.scenicSpot.getAll()
+        .then((res) => {
+          console.log(res);
+        })
+    },
+  },
 }
 </script>
