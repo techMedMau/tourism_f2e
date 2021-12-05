@@ -2,9 +2,9 @@
   <div>
     <div class="h-banner" :style="`background-image: url(${require('../../src/assets/images/banners/banner_food.png')})`"></div>
     <div class="h-48 bg-gradient-to-b from-food"></div>                
-    <SuggestionBlock :bgColor="'bg-food'" :assignedForward="'/'">熱門美食</SuggestionBlock>
-    <SuggestionBlock :bgColor="'bg-food'" :assignedForward="'/'">網紅必推美食</SuggestionBlock>
-    <Footer :bgColor="'bg-food'" :gradientColor="'food'"/>
+    <SuggestionBlock :titleBg="'#738677'" :assignedForward="'/'">熱門美食</SuggestionBlock>
+    <SuggestionBlock :titleBg="'#738677'" :assignedForward="'/'">網紅必推美食</SuggestionBlock>
+    <Footer :bgColor="'#738677'" :gradientColor="'#A7B4AA'"/>
   </div>
 </template>
 

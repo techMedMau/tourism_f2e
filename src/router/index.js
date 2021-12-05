@@ -29,6 +29,11 @@ const routes = [
     path: '/transport',
     name: 'Transport',
     component: () => import(/* webpackChunkName: "about" */ '../views/Transport.vue')
+  },
+  {
+    path: '/spot/:city',
+    name: 'SpotCity',
+    component: () => import(/* webpackChunkName: "about" */ '../views/SpotCity.vue')
   }
 ]
 

@@ -1,0 +1,57 @@
+<template>
+  <div class="container">
+      <div class="banner" :style="`background-image: url(${require('../../src/assets/images/banners/banner_spots.png')})`"></div>
+      <div class="nav">景點 > 北部地區 > 臺北市</div>
+      <div class="city">
+          <img :src="`${require('@/assets/images/tmpCityImg.png')}`" alt="cityImage"/>
+          <div class="city_description">
+              <p class="city_description_name">臺北市</p>
+              <p class="city_description_detail">在臺北，您每個所到之處，多樣的文化特質都充沛鼓動著。雕龍畫棟的廟宇與現代的街道完美吻合，還有許多世界級餐廳隨時提供您最正統的各式中華料理。別忘了，美味的夜市小吃不僅僅帶給您口腹的滿足，更是引領您體驗臺灣生活的理想去處。</p>
+          </div>
+      </div>
+      <SuggestionBlock :titleBg="'#6E9292'" :assignedForward="'/spot'">熱門景點</SuggestionBlock>
+      <SuggestionBlock :titleBg="'#6E9292'" :assignedForward="'/spot'">網紅這樣玩</SuggestionBlock>
+      <Footer :bgColor="'#6E9292'" :gradientColor="'#A7D4DA'"/>
+  </div>
+</template>
+
+<script>
+import Footer from '../components/Footer'
+import SuggestionBlock from '../components/SuggestionBlock'
+
+export default {
+    name: 'SpotCity',
+    components:{ SuggestionBlock, Footer },
+
+}
+</script>
+
+<style lang="scss">
+
+.nav{
+    font-size: 18px;
+    margin: 27px auto 27px 28px;
+}
+
+.city{
+    height: 633px;
+    display: flex;
+    margin-bottom: 33px;
+    &_description{
+        width: 302px;
+        margin: 0 auto;
+        &_name{
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 38px 0;
+        }
+        &_detail{
+            font-size: 24px;
+            line-height: 39px;
+        }
+    }
+    
+}
+
+</style>
