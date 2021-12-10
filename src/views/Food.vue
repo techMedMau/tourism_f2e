@@ -7,6 +7,10 @@
         <img :src="`${require('@/assets/images/pageTitle/mei.png')}`" alt="word_mei" width="300" height="304">
         <img :src="`${require('@/assets/images/pageTitle/si.png')}`" alt="word_si" width="303" height="301">  
       </div>
+      <div class="foodSearch">
+        <input type="text" placeholder="請輸入關鍵字" class="foodSearch_input"/>
+        <img class="foodSearch_icon" :src="`${require('@/assets/images/icons/magnifier.png')}`" alt="icon_magnifier" width="18" height="18"/>
+      </div> 
     </div>
     <div class="foodGradientBg">
       <div class="foodCards">
@@ -41,6 +45,23 @@ export default {
 </script>
 
 <style lang="scss">
+.foodSearch{
+  margin: 10px auto 0 auto;
+  position: relative;
+  width: max-content;
+  &_input{
+    width: 529px;
+    height: 49px;
+    border-radius: 8px;
+    text-indent: 8px;
+  }
+  &_icon{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+
 .foodGradientBg{
   height: 199px;
   background-image: linear-gradient($gradient-food, white);

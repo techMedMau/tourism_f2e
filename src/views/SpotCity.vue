@@ -7,6 +7,16 @@
             <img :src="`${require('@/assets/images/pageTitle/jin.png')}`" alt="word_jin" width="304" height="291">
             <img :src="`${require('@/assets/images/pageTitle/dien.png')}`" alt="word_dien" width="302" height="301">  
         </div>
+        <div class="spotSearch">
+            <div class="spotSearch_inputSpace">
+            <input type="text" placeholder="請輸入關鍵字" class="spotSearch_inputSpace_input"/>
+            <img class="spotSearch_inputSpace_icon" :src="`${require('@/assets/images/icons/magnifier.png')}`" alt="icon_magnifier" width="18" height="18"/>
+            </div> 
+            <button type="button" class="spotSearch_advanced"> 
+                <img :src="`${require('@/assets/images/icons/menu.png')}`" alt="menu" width="24" height="24"/> 
+                <span>進階搜尋</span>
+            </button>
+        </div>
       </div>
       <div class="breadcrumb">景點 > 北部地區 > 臺北市</div>
       <div class="city">
@@ -34,30 +44,5 @@ export default {
 </script>
 
 <style lang="scss">
-
-// .breadcrumb{
-//     font-size: 18px;
-//     padding: 27px 0px 27px 28px;
-// }
-
-// .city{
-//     height: 633px;
-//     display: flex;
-//     margin-bottom: 33px;
-//     &_description{
-//         width: 302px;
-//         margin: 0 auto;
-//         &_name{
-//             text-align: center;
-//             font-size: 3rem;
-//             font-weight: bold;
-//             margin: 38px 0;
-//         }
-//         &_detail{
-//             font-size: 24px;
-//             line-height: 39px;
-//         }
-//     }
-// }
 
 </style>

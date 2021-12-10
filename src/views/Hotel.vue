@@ -3,9 +3,27 @@
     <div class="banner" :style="`background-image: url(${require('../../src/assets/images/banners/banner_hotel.png')})`">
       <Nav-bar class="navComponent"/>
       <img class="banner_logo" :src="`${require('@/assets/images/logo.png')}`" alt="logo" width="152" height="117">
-      <div class="banner_title" style="margin-top: 58px;">
+      <div class="banner_title" style="margin-top: 40px;">
         <img :src="`${require('@/assets/images/pageTitle/zu.png')}`" alt="word_zu" width="297" height="287">
         <img :src="`${require('@/assets/images/pageTitle/su.png')}`" alt="word_su" width="282" height="284">  
+      </div>
+      <div class="hotelSearch">
+        <div>
+          <p class="hotelSearch_word">目的地</p>
+          <input class="hotelSearch_input" style="width: 351px;" type="text" placeholder="你要去哪裡?">
+        </div>
+        <div>
+          <p class="hotelSearch_word">入住-退房</p>
+          <input class="hotelSearch_input" style="width: 159px;" type="date" placeholder="">
+        </div>
+        <div>
+          <p class="hotelSearch_word">房間及人數</p>
+          <input class="hotelSearch_input" style="width: 254px;" type="text" placeholder="2位成人，1間房間">
+        </div>
+        <button class="hotelSearch_button" type="button">
+          <img class="hotelSearch_button_icon" :src="`${require('@/assets/images/icons/magnifier.png')}`" alt="icon_magnifier" width="18" height="18"/>
+          <span>搜尋</span>
+        </button>
       </div>
     </div>
     <div class="hotelGradientBg"></div>
@@ -58,6 +76,41 @@ export default {
 </script>
 
 <style lang="scss">
+
+.hotelSearch{
+  display: flex;
+  margin: 22px auto 0 auto;
+  padding: 35px 20px 35px 20px;
+  width: 1014px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: flex-end;
+  &_word{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  &_input{
+    padding: 14px;
+    border-radius: 10px;
+  }
+  &_button{
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+    background: white;
+    height: max-content;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    &_icon{
+      margin-right: 10px;
+    }
+  }
+}
 
 .hotelGradientBg{
   height: 281px;

@@ -7,6 +7,16 @@
         <img :src="`${require('@/assets/images/pageTitle/jin.png')}`" alt="word_jin" width="304" height="291">
         <img :src="`${require('@/assets/images/pageTitle/dien.png')}`" alt="word_dien" width="302" height="301">  
       </div>
+      <div class="spotSearch">
+        <div class="spotSearch_inputSpace">
+          <input type="text" placeholder="請輸入關鍵字" class="spotSearch_inputSpace_input"/>
+          <img class="spotSearch_inputSpace_icon" :src="`${require('@/assets/images/icons/magnifier.png')}`" alt="icon_magnifier" width="18" height="18"/>
+        </div> 
+        <button type="button" class="spotSearch_advanced"> 
+            <img :src="`${require('@/assets/images/icons/menu.png')}`" alt="menu" width="24" height="24"/> 
+            <span>進階搜尋</span>
+        </button>
+      </div>
     </div>
     <div class="spotGradientBg">
       <SuggestionBlock :titleBg="'#6E9292'" :assignedForward="'/'">熱門景點</SuggestionBlock>
