@@ -10,8 +10,50 @@
 }
 
 .container{
-  width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
+
+.banner{
+  height: 700px;
+  background-repeat: no-repeat;
+  &_logo{
+    margin: 0 auto;
+  }
+  &_title{
+    display: flex;
+    justify-content: center;
+    & img+img{
+      margin-left: 50px;
+    }
+  }
+}
+
+.breadcrumb{
+    font-size: 18px;
+    padding: 27px 0px 27px 28px;
+}
+
+.city{
+    height: 633px;
+    display: flex;
+    margin-bottom: 33px;
+    &_description{
+        width: 302px;
+        margin: 0 auto;
+        &_name{
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 38px 0;
+        }
+        &_detail{
+            font-size: 24px;
+            line-height: 39px;
+        }
+    }
+}
+
+
 
 </style>

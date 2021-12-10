@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <div class="banner" :style="`background-image: url(${require('@/assets/images/banners/banner_homepage.png')})`"></div>
+    <div class="banner" :style="`background-image: url(${require('@/assets/images/banners/banner_homepage.png')})`">
+      <Nav-bar class="navComponent"/>
+      <img class="logo_home" :src="`${require('@/assets/images/logo.png')}`" alt="logo" width="284" height="218">
+    </div>
     <div class="weather">
       <p class="weather_word">台灣許多美景媲美國外，值此五倍券、國旅券及觀光業者加碼優惠盡出之際，旅行台灣就是現在！</p>
       <p class="weather_word">到哪裡旅遊還沒有想法的民眾，歡迎到台灣觀光，體驗「台灣之美」!</p>
@@ -47,8 +50,14 @@ export default {
 
 <style lang="scss">
 
-.banner{
-  height: 700px;
+.navComponent{
+  justify-content: flex-end;
+  margin-right: 30px;
+  padding-top: 24px;
+}
+
+.logo_home{
+  margin: 0 auto;
 }
 
 .weather{
@@ -78,6 +87,12 @@ export default {
     writing-mode: vertical-lr;
     padding: 20px .5rem;
     font-weight: bold;
+  }
+}
+
+.logo{
+  &_home{
+    display: flexbox;
   }
 }
 

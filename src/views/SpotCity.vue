@@ -1,7 +1,14 @@
 <template>
   <div class="container">
-      <div class="banner" :style="`background-image: url(${require('../../src/assets/images/banners/banner_spots.png')})`"></div>
-      <div class="nav">景點 > 北部地區 > 臺北市</div>
+      <div class="banner" :style="`background-image: url(${require('../../src/assets/images/banners/banner_spots.png')})`">
+        <Nav-bar class="navComponent"/>
+        <img class="banner_logo" :src="`${require('@/assets/images/logo.png')}`" alt="logo" width="152" height="117">
+        <div class="banner_title" style="margin-top: 42px;">
+            <img :src="`${require('@/assets/images/pageTitle/jin.png')}`" alt="word_jin" width="304" height="291">
+            <img :src="`${require('@/assets/images/pageTitle/dien.png')}`" alt="word_dien" width="302" height="301">  
+        </div>
+      </div>
+      <div class="breadcrumb">景點 > 北部地區 > 臺北市</div>
       <div class="city">
           <img :src="`${require('@/assets/images/tmpCityImg.png')}`" alt="cityImage"/>
           <div class="city_description">
@@ -28,30 +35,29 @@ export default {
 
 <style lang="scss">
 
-.nav{
-    font-size: 18px;
-    margin: 27px auto 27px 28px;
-}
+// .breadcrumb{
+//     font-size: 18px;
+//     padding: 27px 0px 27px 28px;
+// }
 
-.city{
-    height: 633px;
-    display: flex;
-    margin-bottom: 33px;
-    &_description{
-        width: 302px;
-        margin: 0 auto;
-        &_name{
-            text-align: center;
-            font-size: 3rem;
-            font-weight: bold;
-            margin: 38px 0;
-        }
-        &_detail{
-            font-size: 24px;
-            line-height: 39px;
-        }
-    }
-    
-}
+// .city{
+//     height: 633px;
+//     display: flex;
+//     margin-bottom: 33px;
+//     &_description{
+//         width: 302px;
+//         margin: 0 auto;
+//         &_name{
+//             text-align: center;
+//             font-size: 3rem;
+//             font-weight: bold;
+//             margin: 38px 0;
+//         }
+//         &_detail{
+//             font-size: 24px;
+//             line-height: 39px;
+//         }
+//     }
+// }
 
 </style>
