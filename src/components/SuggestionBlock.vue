@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    name: 'SuggestionBlock',
+    name: 'SuggestionBlock-component',
     props:{
         titleBg:{
             type: String,

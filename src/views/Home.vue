@@ -38,7 +38,7 @@ import Footer from '../components/Footer'
 import SuggestionBlock from '../components/SuggestionBlock'
 
 export default {
-  name: 'Home',
+  name: 'Home-view',
   components: { Footer, SuggestionBlock },
   data(){
     return{

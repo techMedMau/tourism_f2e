@@ -41,7 +41,7 @@
 import Footer from '../components/Footer'
 import SuggestionBlock from '../components/SuggestionBlock.vue'
 export default {
-    name: 'Transport',
+    name: 'Transport-view',
     components: { SuggestionBlock, Footer },
 }
 </script>

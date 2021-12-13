@@ -20,7 +20,7 @@
 
 <script>
 export default {
-    name: 'Footer',
+    name: 'Footer-component',
     props:{
         bgColor:{
             type: String,

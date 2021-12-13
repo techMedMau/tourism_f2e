@@ -37,7 +37,7 @@ import Footer from '../components/Footer'
 import SuggestionBlock from '../components/SuggestionBlock'
 
 export default {
-    name: 'SpotCity',
+    name: 'SpotCity-view',
     components:{ SuggestionBlock, Footer },
 
 }

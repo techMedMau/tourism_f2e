@@ -24,7 +24,7 @@ import Footer from '../components/Footer'
 import SuggestionBlock from '../components/SuggestionBlock.vue'
 
 export default {
-    name: 'SpotId',
+    name: 'SpotId-view',
     components: { Footer, SuggestionBlock },
     data(){
         return {

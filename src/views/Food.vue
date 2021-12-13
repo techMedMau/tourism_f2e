@@ -39,7 +39,7 @@ import Footer from '../components/Footer'
 import SuggestionBlock from '../components/SuggestionBlock.vue'
 
 export default {
-    name: 'Food',
+    name: 'Food-view',
     components: { SuggestionBlock, Footer },
 }
 </script>

@@ -32,7 +32,7 @@ import Footer from '../components/Footer'
 import SuggestionBlock from '../components/SuggestionBlock.vue'
 
 export default {
-  name: 'Spot',
+  name: 'Spot-view',
   components: { SuggestionBlock, Footer },
 
 }

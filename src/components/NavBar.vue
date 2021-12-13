@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name:'NavBar',
+    name:'NavBar-component',
 
 }
 </script>
