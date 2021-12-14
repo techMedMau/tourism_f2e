@@ -28,11 +28,6 @@
   }
 }
 
-.breadcrumb{
-    font-size: 18px;
-    padding: 27px 0px 27px 28px;
-}
-
 .city{
     height: 633px;
     display: flex;
@@ -84,7 +79,5 @@
     width: 112px;
   }
 }
-
-
 
 </style>
