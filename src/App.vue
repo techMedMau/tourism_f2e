@@ -19,13 +19,6 @@
   &_logo{
     margin: 0 auto;
   }
-  // &_title{
-  //   display: flex;
-  //   justify-content: center;
-  //   & img+img{
-  //     margin-left: 50px;
-  //   }
-  // }
 }
 
 .city{
@@ -46,38 +39,6 @@
             line-height: 39px;
         }
     }
-}
-
-.spotSearch{
-  margin-top: 21px;
-  display: flex;
-  justify-content: center;
-  &_inputSpace, &_advanced{
-    display: flex;
-    justify-content: space-between;
-  }
-  &_inputSpace{
-    position: relative;
-    align-items: center;
-    &_input{
-      border-radius: 8px;
-      width: 529px;
-      text-indent: 8px;
-      height: 100%;
-      border-radius: 8px;
-    }
-    &_icon{
-      position: absolute;
-      right: 15px;
-    }
-  }
-  &_advanced{
-    background: white;
-    border-radius: 8px;
-    padding: 12px 8px;
-    margin-left: 14px;
-    width: 112px;
-  }
 }
 
 </style>

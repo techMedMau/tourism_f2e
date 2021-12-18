@@ -13,32 +13,8 @@
         width="152"
         height="117"
       />
-      <BannerTitle :imageArr="$store.state.bannerTitleImages.spot" />
-      <div class="spotSearch">
-        <div class="spotSearch_inputSpace">
-          <input
-            type="text"
-            placeholder="請輸入關鍵字"
-            class="spotSearch_inputSpace_input"
-          />
-          <img
-            class="spotSearch_inputSpace_icon"
-            :src="`${require('@/assets/images/icons/magnifier.png')}`"
-            alt="icon_magnifier"
-            width="18"
-            height="18"
-          />
-        </div>
-        <button type="button" class="spotSearch_advanced">
-          <img
-            :src="`${require('@/assets/images/icons/menu.png')}`"
-            alt="menu"
-            width="24"
-            height="24"
-          />
-          <span>進階搜尋</span>
-        </button>
-      </div>
+      <BannerTitle style="margin-top: 47px;" :imageArr="$store.state.bannerTitleImages.spot" />
+      <SearchBar style="margin-top: 20px;" />
     </div>
     <div class="spotGradientBg">
       <suggestion-block :titleBg="'#6E9292'" :assignedForward="'/'"
@@ -57,10 +33,11 @@
 
 <script>
 import BannerTitle from '../components/BannerTitle.vue';
+import SearchBar from '../components/SearchBar.vue';
 
 export default {
   name: 'Spot-view',
-  components: { BannerTitle },
+  components: { BannerTitle, SearchBar },
 };
 </script>
 

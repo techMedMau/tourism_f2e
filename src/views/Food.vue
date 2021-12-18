@@ -14,20 +14,7 @@
         height="117"
       />
       <BannerTitle :imageArr="$store.state.bannerTitleImages.food" />
-      <div class="foodSearch">
-        <input
-          type="text"
-          placeholder="請輸入關鍵字"
-          class="foodSearch_input"
-        />
-        <img
-          class="foodSearch_icon"
-          :src="`${require('@/assets/images/icons/magnifier.png')}`"
-          alt="icon_magnifier"
-          width="18"
-          height="18"
-        />
-      </div>
+      <SearchBar style="margin-top: 10px;"/>
     </div>
     <div class="foodGradientBg">
       <div class="foodCards">
@@ -66,31 +53,15 @@
 
 <script>
 import BannerTitle from '../components/BannerTitle.vue';
+import SearchBar from '../components/SearchBar.vue';
 
 export default {
   name: 'Food-view',
-  components: { BannerTitle },
+  components: { BannerTitle, SearchBar },
 };
 </script>
 
 <style lang="scss">
-.foodSearch {
-  margin: 10px auto 0 auto;
-  position: relative;
-  width: max-content;
-  &_input {
-    width: 529px;
-    height: 49px;
-    border-radius: 8px;
-    text-indent: 8px;
-  }
-  &_icon {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-  }
-}
-
 .foodGradientBg {
   height: 199px;
   background-image: linear-gradient($gradient-food, white);

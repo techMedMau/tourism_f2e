@@ -14,31 +14,7 @@
         height="117"
       />
       <BannerTitle :imageArr="$store.state.bannerTitleImages.spot" />
-      <div class="spotSearch">
-        <div class="spotSearch_inputSpace">
-          <input
-            type="text"
-            placeholder="請輸入關鍵字"
-            class="spotSearch_inputSpace_input"
-          />
-          <img
-            class="spotSearch_inputSpace_icon"
-            :src="`${require('@/assets/images/icons/magnifier.png')}`"
-            alt="icon_magnifier"
-            width="18"
-            height="18"
-          />
-        </div>
-        <button type="button" class="spotSearch_advanced">
-          <img
-            :src="`${require('@/assets/images/icons/menu.png')}`"
-            alt="menu"
-            width="24"
-            height="24"
-          />
-          <span>進階搜尋</span>
-        </button>
-      </div>
+      <SearchBar style="margin-top: 20px" />
     </div>
     <Breadcrumb :crumbList="['景點', '北部地區','臺北市']" @selected="selected"/>
     <div class="city">
@@ -67,10 +43,11 @@
 <script>
 import Breadcrumb from '../components/Breadcrumb.vue';
 import BannerTitle from '../components/BannerTitle.vue';
+import SearchBar from '../components/SearchBar.vue';
 
 export default {
   name: 'SpotCity-view',
-  components: { Breadcrumb, BannerTitle },
+  components: { Breadcrumb, BannerTitle, SearchBar },
   methods: {
     selected(item) {
       console.log(item);
