@@ -68,12 +68,11 @@
         </p>
       </div>
     </div>
-    <suggestion-block :titleBg="'#6E9292'" :assignedForward="'/spot'"
-      >熱門景點</suggestion-block
-    >
-    <suggestion-block :titleBg="'#6E9292'" :assignedForward="'/spot'"
-      >網紅這樣玩</suggestion-block
-    >
+    <suggestion-block
+      :showPagination="true"
+      :titleBg="'#6E9292'"
+      :assignedForward="'/spot'">熱門景點</suggestion-block>
+    <suggestion-block :titleBg="'#6E9292'" :assignedForward="'/spot'">網紅這樣玩</suggestion-block>
     <footer-component :bgColor="'#6E9292'" :gradientColor="'#A7D4DA'" />
   </div>
 </template>

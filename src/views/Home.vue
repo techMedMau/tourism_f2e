@@ -65,9 +65,9 @@
 </template>
 
 <script>
-
 export default {
   name: 'Home-view',
+  components: { },
   data() {
     return {
       choice: ['景點', '美食', '住宿', '交通'],

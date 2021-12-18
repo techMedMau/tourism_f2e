@@ -9,13 +9,26 @@
         <router-link :to="assignedForward"> 查看更多 </router-link>
       </div>
     </div>
+     <Pagination
+       v-if="showPagination"
+       :totalItems="11"
+       :buttonPerPage="3"
+       @paginationEvent="paginationEvent"/>
   </div>
 </template>
 
 <script>
+import Pagination from './Pagination.vue';
+
 export default {
   name: 'SuggestionBlock-component',
+  components: { Pagination },
   props: {
+    showPagination: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
     titleBg: {
       type: String,
       required: true,
@@ -28,12 +41,16 @@ export default {
   data() {
     return {};
   },
+  methods: {
+    paginationEvent(page) {
+      console.log(page);
+    },
+  },
 };
 </script>
 
 <style lang="scss">
 .suggestion {
-  height: 660px;
   &_title {
     height: 71px;
     color: white;
