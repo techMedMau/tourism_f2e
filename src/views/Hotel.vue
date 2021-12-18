@@ -13,20 +13,7 @@
         width="152"
         height="117"
       />
-      <div class="banner_title" style="margin-top: 40px">
-        <img
-          :src="`${require('@/assets/images/pageTitle/zu.png')}`"
-          alt="word_zu"
-          width="297"
-          height="287"
-        />
-        <img
-          :src="`${require('@/assets/images/pageTitle/su.png')}`"
-          alt="word_su"
-          width="282"
-          height="284"
-        />
-      </div>
+      <BannerTitle :imageArr="$store.state.bannerTitleImages.hotel" />
       <div class="hotelSearch">
         <div>
           <p class="hotelSearch_word">目的地</p>
@@ -126,9 +113,11 @@
 </template>
 
 <script>
+import BannerTitle from '../components/BannerTitle.vue';
 
 export default {
   name: 'Hotel-view',
+  components: { BannerTitle },
 };
 </script>
 

@@ -19,13 +19,13 @@
   &_logo{
     margin: 0 auto;
   }
-  &_title{
-    display: flex;
-    justify-content: center;
-    & img+img{
-      margin-left: 50px;
-    }
-  }
+  // &_title{
+  //   display: flex;
+  //   justify-content: center;
+  //   & img+img{
+  //     margin-left: 50px;
+  //   }
+  // }
 }
 
 .city{

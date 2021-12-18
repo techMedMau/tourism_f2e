@@ -13,20 +13,7 @@
         width="152"
         height="117"
       />
-      <div class="banner_title" style="margin-top: 59px">
-        <img
-          :src="`${require('@/assets/images/pageTitle/jiao.png')}`"
-          alt="word_jiao"
-          width="284"
-          height="291"
-        />
-        <img
-          :src="`${require('@/assets/images/pageTitle/tong.png')}`"
-          alt="word_tong"
-          width="298"
-          height="295"
-        />
-      </div>
+      <BannerTitle :imageArr="$store.state.bannerTitleImages.transport" />
     </div>
     <div class="transportGradientBg"></div>
     <div class="transport_content">
@@ -72,17 +59,17 @@
       <suggestion-block :titleBg="'#AA796C'" :assignedForward="'/'"
         >交通租賃</suggestion-block
       >
-      <Footer :bgColor="'#AA796C'" :gradientColor="'#E6BEB4'" />
+      <footer-component :bgColor="'#AA796C'" :gradientColor="'#E6BEB4'" />
     </div>
   </div>
 </template>
 
 <script>
-import Footer from '../components/Footer.vue';
+import BannerTitle from '../components/BannerTitle.vue';
 
 export default {
   name: 'Transport-view',
-  components: { Footer },
+  components: { BannerTitle },
 };
 </script>
 

@@ -13,20 +13,7 @@
         width="152"
         height="117"
       />
-      <div class="banner_title" style="margin-top: 42px">
-        <img
-          :src="`${require('@/assets/images/pageTitle/jin.png')}`"
-          alt="word_jin"
-          width="304"
-          height="291"
-        />
-        <img
-          :src="`${require('@/assets/images/pageTitle/dien.png')}`"
-          alt="word_dien"
-          width="302"
-          height="301"
-        />
-      </div>
+      <BannerTitle :imageArr="$store.state.bannerTitleImages.spot" />
       <div class="spotSearch">
         <div class="spotSearch_inputSpace">
           <input
@@ -69,9 +56,11 @@
 </template>
 
 <script>
+import BannerTitle from '../components/BannerTitle.vue';
 
 export default {
   name: 'Spot-view',
+  components: { BannerTitle },
 };
 </script>
 

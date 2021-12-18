@@ -13,20 +13,7 @@
         width="152"
         height="117"
       />
-      <div class="banner_title" style="margin-top: 49px">
-        <img
-          :src="`${require('@/assets/images/pageTitle/mei.png')}`"
-          alt="word_mei"
-          width="300"
-          height="304"
-        />
-        <img
-          :src="`${require('@/assets/images/pageTitle/si.png')}`"
-          alt="word_si"
-          width="303"
-          height="301"
-        />
-      </div>
+      <BannerTitle :imageArr="$store.state.bannerTitleImages.food" />
       <div class="foodSearch">
         <input
           type="text"
@@ -78,9 +65,11 @@
 </template>
 
 <script>
+import BannerTitle from '../components/BannerTitle.vue';
 
 export default {
   name: 'Food-view',
+  components: { BannerTitle },
 };
 </script>
 
