@@ -45,7 +45,7 @@
         <button class="hotelSearch_button" type="button">
           <img
             class="hotelSearch_button_icon"
-            :src="`${require('@/assets/images/icons/magnifier.png')}`"
+            :src="`${require('@/assets/images/icons/magnifier.svg')}`"
             alt="icon_magnifier"
             width="18"
             height="18"

@@ -4,8 +4,9 @@
         <!-- <li class="pagination_item">
             <button type="button" @click="clickFirstPage" :disabled="isInFirstPage">第一頁</button>
         </li> -->
-        <li class="pagination_item " v-if="!isInFirstPage"  @click="clickPreviousPage">
-            &lt;
+        <li class="pagination_item arrow" v-if="!isInFirstPage"  @click="clickPreviousPage">
+           <img :src="require('@/assets/images/icons/arrow-left.svg')" alt="icon_arrow-right"
+          width="24" height="24"/>
         </li>
         <li class="pagination_item" v-for="item in pageDisplay"
           :key="item.name"
@@ -13,8 +14,9 @@
           @click="pageChange(item.name)">
             {{item.name}}
         </li>
-        <li class="pagination_item" v-if="!isInLastPage" @click="clickNextPage">
-          >
+        <li class="pagination_item arrow" v-if="!isInLastPage" @click="clickNextPage">
+          <img :src="require('@/assets/images/icons/arrow-right.svg')" alt="icon_arrow-right"
+          width="24" height="24"/>
         </li>
         <!-- <li>
             <button type="button" @click="clickLastPage" :disabled="isInLastPage">最後一頁</button>
@@ -117,6 +119,11 @@ export default {
           margin-left: 8px;
         }
     }
+}
+
+.arrow{
+  display: flex;
+  justify-content: center;
 }
 
 .active{
